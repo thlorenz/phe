@@ -1,6 +1,6 @@
 {
   "name": "phe",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Poker hand evaluator.",
   "main": "phe.js",
   "scripts": {
