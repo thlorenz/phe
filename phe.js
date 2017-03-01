@@ -16,11 +16,30 @@ const {
     cardCode
   , cardCodes
   , boardCodes
+  , rankCodes
+  , suitCodes
 } = require('./lib/hand-code')
 
 const evaluate5cards = require('./lib/evaluator5')
 const evaluate6cards = require('./lib/evaluator6')
 const evaluate7cards = require('./lib/evaluator7')
+
+/**
+ * Evaluates the 5 - 7 card codes to arrive at a number representing the hand
+ * strength, smaller is better.
+ *
+ * @name evaluateCardCodes
+ * @function
+ * @param {Array.<Number>} cards the cards, i.e. `[ 49, 36, 4, 48, 41 ]`
+ * @return {Number} the strength of the hand comprised by the card codes
+ */
+function evaluateCardCodes(codes) {
+  const len = codes.length
+  if (len === 5) return evaluate5cards.apply(null, codes)
+  if (len === 6) return evaluate6cards.apply(null, codes)
+  if (len === 7) return evaluate7cards.apply(null, codes)
+  throw new Error(`Can only evaluate 5, 6 or 7 cards, you gave me ${len}`)
+}
 
 /**
  * Evaluates the 5 - 7 cards to arrive at a number representing the hand
@@ -44,11 +63,7 @@ function evaluateCards(cards) {
  */
 function evaluateCardsFast(cards) {
   const codes = cardCodes(cards)
-  const len = codes.length
-  if (len === 5) return evaluate5cards.apply(null, codes)
-  if (len === 6) return evaluate6cards.apply(null, codes)
-  if (len === 7) return evaluate7cards.apply(null, codes)
-  throw new Error(`Can only evaluate 5, 6 or 7 cards, you gave me ${len}`)
+  return evaluateCardCodes(codes)
 }
 
 /**
@@ -88,7 +103,20 @@ function rankCardsFast(cards) {
 }
 
 /**
- * ranks the given board of 5 to 7 cards provided as part of the board to
+ * Evaluates the 5 - 7 card codes and then calculates the hand rank.
+ *
+ * @name rankCardCodes
+ * @function
+ * @param {Array.<Number>} cardCodes the card codes whose ranking to determine
+ * @return {Number} the rank of the hand comprised by the card codes, i.e. `1` for
+ * `FOUR_OF_A_KIND` (enumerated in ranks)
+ */
+function rankCardCodes(cardCodes) {
+  return handRank(evaluateCardCodes(cardCodes))
+}
+
+/**
+ * Evaluates the given board of 5 to 7 cards provided as part of the board to
  * and then calculates the hand rank.
  *
  * @name rankBoard
@@ -134,9 +162,11 @@ const ranks = {
 module.exports = {
     evaluateCards
   , evaluateCardsFast
+  , evaluateCardCodes
   , evaluateBoard
   , rankCards
   , rankCardsFast
+  , rankCardCodes
   , rankBoard
 
   // hand rank
@@ -148,4 +178,6 @@ module.exports = {
   , cardCode
   , cardCodes
   , boardCodes
+  , rankCodes
+  , suitCodes
 }
