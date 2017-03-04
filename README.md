@@ -45,6 +45,7 @@ console.log('%s is a %s', board, name)
   - [handRank](#handrank)
   - [rankCodes](#rankcodes)
   - [suitCodes](#suitcodes)
+  - [stringifyCardCode](#stringifycardcode)
   - [cardCode](#cardcode)
   - [cardCodes](#cardcodes)
   - [boardCodes](#boardcodes)
@@ -204,6 +205,16 @@ The suitCodes
 -   c = 3
 
 Returns **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** the suits indexed as described above
+
+### stringifyCardCode
+
+Converts the given card code into a string presentation.
+
+**Parameters**
+
+-   `code` **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** the card code, i.e. obtained via `cardCode(rank, suit)`.
+
+Returns **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** a string representation of the card in question, i.e. `Ah`
 
 ### cardCode
 
