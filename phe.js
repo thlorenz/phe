@@ -18,6 +18,7 @@ const {
   , boardCodes
   , rankCodes
   , suitCodes
+  , stringifyCardCode
 } = require('./lib/hand-code')
 
 const evaluate5cards = require('./lib/evaluator5')
@@ -91,7 +92,7 @@ function evaluateBoard(board) {
  * `FOUR_OF_A_KIND` (enumerated in ranks)
  */
 function rankCards(cards) {
-  return handRank(rankCards(cards))
+  return handRank(evaluateCards(cards))
 }
 
 /**
@@ -180,4 +181,5 @@ module.exports = {
   , boardCodes
   , rankCodes
   , suitCodes
+  , stringifyCardCode
 }
