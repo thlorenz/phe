@@ -1,3 +1,5 @@
+'use strict'
+
 const test = require('tape')
 const evaluate5cards = require('../lib/evaluator5')
 const {

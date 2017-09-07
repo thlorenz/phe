@@ -1,3 +1,5 @@
+'use strict'
+
 const test = require('tape')
 const { rankBoard, rankDescription } = require('../')
 const { prettyBoard } = require('./utils/utils')

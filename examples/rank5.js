@@ -1,3 +1,5 @@
+'use strict'
+
 const { rankBoard, rankDescription } = require('../')
 
 const board = 'As Ks 4h Ad Kd'

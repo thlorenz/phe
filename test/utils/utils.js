@@ -1,3 +1,5 @@
+'use strict'
+
 const colors = require('ansicolors')
 const suits = {
     h: colors.red('♥')
