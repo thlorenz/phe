@@ -131,6 +131,35 @@ function rankBoard(cards) {
 }
 
 /**
+ * Converts a set of cards to card codes.
+ *
+ * @name setCardCodes
+ * @function
+ * @param {Set.<String>} set card strings set, i.e. `Set({'Ah', 'Ks', 'Td', '3c, 'Ad'})`
+ * @return {Set.<Number>} card code set
+ */
+function setCardCodes(set) {
+  const codeSet = new Set()
+  for (const v of set) codeSet.add(cardCode(v))
+  return codeSet
+}
+
+/**
+ * Converts a set of card codes to their string representations.
+ *
+ * @name setStringifyCardCodes
+ * @function
+ * @param {Set.<Number>} set card code set
+ * @return {Set.<String>} set with string representations of the card codes,
+ *                        i.e. `Set({'Ah', 'Ks', 'Td', '3c, 'Ad'})`
+ */
+function setStringifyCardCodes(set) {
+  const stringSet = new Set()
+  for (const v of set) stringSet.add(stringifyCardCode(v))
+  return stringSet
+}
+
+/**
   * Enumeration of possible hand ranks, each rank is a number from 0-8.
   *
   * ```
@@ -178,6 +207,8 @@ module.exports = {
   // hand code
   , cardCode
   , cardCodes
+  , setCardCodes
+  , setStringifyCardCodes
   , boardCodes
   , rankCodes
   , suitCodes
