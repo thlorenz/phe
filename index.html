@@ -1,0 +1,1516 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset='utf-8' />
+  <title>  | Documentation</title>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <link href='assets/bass.css' type='text/css' rel='stylesheet' />
+  <link href='assets/style.css' type='text/css' rel='stylesheet' />
+  <link href='assets/github.css' type='text/css' rel='stylesheet' />
+</head>
+<body class='documentation'>
+  <div class='max-width-4 mx-auto'>
+    <div class='clearfix md-mxn2'>
+      <div class='fixed xs-hide fix-3 overflow-auto max-height-100'>
+        <div class='py1 px2'>
+          <h3 class='mb0 no-anchor'></h3>
+          <div class='mb1'><code></code></div>
+          <input
+            placeholder='Filter'
+            id='filter-input'
+            class='col12 block input'
+            type='text' />
+          <div id='toc'>
+            <ul class='list-reset h5 py1-ul'>
+              
+                
+                <li><a
+                  href='#evaluatecardcodes'
+                  class="">
+                  evaluateCardCodes
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#evaluatecards'
+                  class="">
+                  evaluateCards
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#evaluatecardsfast'
+                  class="">
+                  evaluateCardsFast
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#evaluateboard'
+                  class="">
+                  evaluateBoard
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#rankcards'
+                  class="">
+                  rankCards
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#rankcardsfast'
+                  class="">
+                  rankCardsFast
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#rankcardcodes'
+                  class="">
+                  rankCardCodes
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#rankboard'
+                  class="">
+                  rankBoard
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#setcardcodes'
+                  class="">
+                  setCardCodes
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#setstringifycardcodes'
+                  class="">
+                  setStringifyCardCodes
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#ranks'
+                  class="">
+                  ranks
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#rankdescription'
+                  class="">
+                  rankDescription
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#handrank'
+                  class="">
+                  handRank
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#rankcodes'
+                  class="">
+                  rankCodes
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#suitcodes'
+                  class="">
+                  suitCodes
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#stringifycardcode'
+                  class="">
+                  stringifyCardCode
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#cardcode'
+                  class="">
+                  cardCode
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#cardcodes'
+                  class="">
+                  cardCodes
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#boardcodes'
+                  class="">
+                  boardCodes
+                  
+                </a>
+                
+                </li>
+              
+            </ul>
+          </div>
+          <div class='mt1 h6 quiet'>
+            <a href='http://documentation.js.org/reading-documentation.html'>Need help reading this?</a>
+          </div>
+        </div>
+      </div>
+      <div class='fix-margin-3'>
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='evaluatecardcodes'>
+      evaluateCardCodes
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Evaluates the 5 - 7 card codes to arrive at a number representing the hand
+strength, smaller is better.</p>
+
+
+  <div class='pre p1 fill-light mt0'>evaluateCardCodes(cards: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>cards</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>>)</code>
+	    the cards, i.e. 
+<code>[ 49, 36, 4, 48, 41 ]</code>
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
+        the strength of the hand comprised by the card codes
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='evaluatecards'>
+      evaluateCards
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Evaluates the 5 - 7 cards to arrive at a number representing the hand
+strength, smaller is better.</p>
+
+
+  <div class='pre p1 fill-light mt0'>evaluateCards(cards: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>cards</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>>)</code>
+	    the cards, i.e. 
+<code>[ 'Ah', 'Ks', 'Td', '3c', 'Ad' ]</code>
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
+        the strength of the hand comprised by the cards
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='evaluatecardsfast'>
+      evaluateCardsFast
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Same as <code>evaluateCards</code> but skips <code>cards</code> argument type check to be more
+performant.</p>
+
+
+  <div class='pre p1 fill-light mt0'>evaluateCardsFast(cards: any)</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>cards</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='evaluateboard'>
+      evaluateBoard
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Evaluates the given board of 5 to 7 cards provided as part of the board to
+arrive at a number representing the hand strength, smaller is better.</p>
+
+
+  <div class='pre p1 fill-light mt0'>evaluateBoard(board: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>board</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+	    the board, i.e. 
+<code>'Ah Ks Td 3c Ad'</code>
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
+        the strength of the hand comprised by the cards of the board
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='rankcards'>
+      rankCards
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Evaluates the 5 - 7 cards and then calculates the hand rank.</p>
+
+
+  <div class='pre p1 fill-light mt0'>rankCards(cards: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>cards</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>>)</code>
+	    the cards, i.e. 
+<code>[ 'Ah', 'Ks', 'Td', '3c', 'Ad' ]</code>
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
+        the rank of the hand comprised by the cards, i.e. 
+<code>1</code>
+ for
+
+<code>FOUR_OF_A_KIND</code>
+ (enumerated in ranks)
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='rankcardsfast'>
+      rankCardsFast
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Same as <code>rankCards</code> but skips <code>cards</code> argument type check to be more
+performant.</p>
+
+
+  <div class='pre p1 fill-light mt0'>rankCardsFast(cards: any)</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>cards</span> <code class='quiet'>(any)</code>
+	    
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='rankcardcodes'>
+      rankCardCodes
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Evaluates the 5 - 7 card codes and then calculates the hand rank.</p>
+
+
+  <div class='pre p1 fill-light mt0'>rankCardCodes(cardCodes: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>cardCodes</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>>)</code>
+	    the card codes whose ranking to determine
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
+        the rank of the hand comprised by the card codes, i.e. 
+<code>1</code>
+ for
+
+<code>FOUR_OF_A_KIND</code>
+ (enumerated in ranks)
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='rankboard'>
+      rankBoard
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Evaluates the given board of 5 to 7 cards provided as part of the board to
+and then calculates the hand rank.</p>
+
+
+  <div class='pre p1 fill-light mt0'>rankBoard(board: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>board</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+	    the board, i.e. 
+<code>'Ah Ks Td 3c Ad'</code>
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
+        the rank of the hand comprised by the cards, i.e. 
+<code>1</code>
+ for
+
+<code>FOUR_OF_A_KIND</code>
+ (enumerated in ranks)
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='setcardcodes'>
+      setCardCodes
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Converts a set of cards to card codes.</p>
+
+
+  <div class='pre p1 fill-light mt0'>setCardCodes(set: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>set</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>>)</code>
+	    card strings set, i.e. 
+<code>Set({'Ah', 'Ks', 'Td', '3c, 'Ad'})</code>
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>></code>:
+        card code set
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='setstringifycardcodes'>
+      setStringifyCardCodes
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Converts a set of card codes to their string representations.</p>
+
+
+  <div class='pre p1 fill-light mt0'>setStringifyCardCodes(set: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>set</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>>)</code>
+	    card code set
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set">Set</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>></code>:
+        set with string representations of the card codes,
+i.e. 
+<code>Set({'Ah', 'Ks', 'Td', '3c, 'Ad'})</code>
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='ranks'>
+      ranks
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Enumeration of possible hand ranks, each rank is a number from 0-8.</p>
+<pre><code>STRAIGHT_FLUSH
+FOUR_OF_A_KIND
+FULL_HOUSE
+FLUSH
+STRAIGHT
+THREE_OF_A_KIND
+TWO_PAIR
+ONE_PAIR
+HIGH_CARD
+</code></pre>
+
+
+  <div class='pre p1 fill-light mt0'>ranks()</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='rankdescription'>
+      rankDescription
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Provides a description of a hand rank number.
+It's an {Array} which can be indexed into with the hand rank
+in order to retrieve the matching description.</p>
+<p>Example: <code>rankDescription[rank.FULL_HOUSE] === 'Full House'</code></p>
+
+
+  <div class='pre p1 fill-light mt0'>rankDescription</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='handrank'>
+      handRank
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Converts a hand strength number into a hand rank number
+<code>0 - 8</code> for <code>STRAIGHT_FLUSH - HIGH_CARD</code>.</p>
+
+
+  <div class='pre p1 fill-light mt0'>handRank(val: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>val</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
+	    hand strength (result of an 
+<code>evaluate</code>
+ function)
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
+        the hand rank
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='rankcodes'>
+      rankCodes
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>The ranks of the cards sorted highest to lowest.</p>
+<ul>
+<li>2 = 0</li>
+<li>3 = 1</li>
+<li>4 = 2</li>
+<li>5 = 2</li>
+<li>6 = 4</li>
+<li>7 = 5</li>
+<li>8 = 6</li>
+<li>9 = 7</li>
+<li>T = 8</li>
+<li>J = 9</li>
+<li>Q = 10</li>
+<li>K = 11</li>
+<li>A = 12</li>
+</ul>
+<p>6 bits each.</p>
+
+
+  <div class='pre p1 fill-light mt0'>rankCodes</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        the ranks indexed as described above
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='suitcodes'>
+      suitCodes
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>The suitCodes</p>
+<ul>
+<li>s = 0</li>
+<li>h = 1</li>
+<li>d = 2</li>
+<li>c = 3</li>
+</ul>
+
+
+  <div class='pre p1 fill-light mt0'>suitCodes</div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        the suits indexed as described above
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='stringifycardcode'>
+      stringifyCardCode
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Converts the given card code into a string presentation.</p>
+
+
+  <div class='pre p1 fill-light mt0'>stringifyCardCode(code: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>code</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>)</code>
+	    the card code, i.e. obtained via 
+<code>cardCode(rank, suit)</code>
+.
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a></code>:
+        a string representation of the card in question, i.e. 
+<code>Ah</code>
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='cardcode'>
+      cardCode
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Determines the code for the given hand.</p>
+
+
+  <div class='pre p1 fill-light mt0'>cardCode(rank: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>, suit: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>rank</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+	    the rank of the hand, i.e. 
+<code>A</code>
+
+          </div>
+          
+        </div>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>suit</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+	    the suit of the hand, i.e. 
+<code>h</code>
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a></code>:
+        the card code that can be used to further evaluate the hand
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='cardcodes'>
+      cardCodes
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Determines the code for the given hands.</p>
+
+
+  <div class='pre p1 fill-light mt0'>cardCodes(cards: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>cards</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>>)</code>
+	    the cards to convert into card codes, i.e. 
+<code>[ 'Ah', 'Kd' ]</code>
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>></code>:
+        the card codes that can be used to further evaluate the hands
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+            <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='boardcodes'>
+      boardCodes
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>Determines the code for the given hands.</p>
+
+
+  <div class='pre p1 fill-light mt0'>boardCodes(board: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>): <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>></div>
+  
+  
+
+  
+  
+  
+  
+  
+
+  
+    <div class='py1 quiet mt1 prose-big'>Parameters</div>
+    <div class='prose'>
+      
+        <div class='space-bottom0'>
+          <div>
+            <span class='code bold'>board</span> <code class='quiet'>(<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String">String</a>)</code>
+	    the board to convert into card codes, i.e. 
+<code>'Ah Kd Qh'</code>
+
+          </div>
+          
+        </div>
+      
+    </div>
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array">Array</a>&#x3C;<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number">Number</a>></code>:
+        the card codes that can be used to further evaluate the hands
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+      </div>
+    </div>
+  </div>
+  <script src='assets/anchor.js'></script>
+  <script src='assets/site.js'></script>
+</body>
+</html>
