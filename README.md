@@ -31,25 +31,25 @@ console.log('%s is a %s', board, name)
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
-- [API](#api)
-  - [evaluateCardCodes](#evaluatecardcodes)
-  - [evaluateCards](#evaluatecards)
-  - [evaluateCardsFast](#evaluatecardsfast)
-  - [evaluateBoard](#evaluateboard)
-  - [rankCards](#rankcards)
-  - [rankCardsFast](#rankcardsfast)
-  - [rankCardCodes](#rankcardcodes)
-  - [rankBoard](#rankboard)
-  - [ranks](#ranks)
-  - [rankDescription](#rankdescription)
-  - [handRank](#handrank)
-  - [rankCodes](#rankcodes)
-  - [suitCodes](#suitcodes)
-  - [stringifyCardCode](#stringifycardcode)
-  - [cardCode](#cardcode)
-  - [cardCodes](#cardcodes)
-  - [boardCodes](#boardcodes)
-- [License](#license)
+-   [API](#api)
+    -   [evaluateCardCodes](#evaluatecardcodes)
+    -   [evaluateCards](#evaluatecards)
+    -   [evaluateCardsFast](#evaluatecardsfast)
+    -   [evaluateBoard](#evaluateboard)
+    -   [rankCards](#rankcards)
+    -   [rankCardsFast](#rankcardsfast)
+    -   [rankCardCodes](#rankcardcodes)
+    -   [rankBoard](#rankboard)
+    -   [ranks](#ranks)
+    -   [rankDescription](#rankdescription)
+    -   [handRank](#handrank)
+    -   [rankCodes](#rankcodes)
+    -   [suitCodes](#suitcodes)
+    -   [stringifyCardCode](#stringifycardcode)
+    -   [cardCode](#cardcode)
+    -   [cardCodes](#cardcodes)
+    -   [boardCodes](#boardcodes)
+-   [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -142,6 +142,27 @@ and then calculates the hand rank.
 Returns **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** the rank of the hand comprised by the cards, i.e. `1` for
 `FOUR_OF_A_KIND` (enumerated in ranks)
 
+### setCardCodes
+
+Converts a set of cards to card codes.
+
+**Parameters**
+
+-   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)&lt;[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>** card strings set, i.e. `Set({'Ah', 'Ks', 'Td', '3c, 'Ad'})`
+
+Returns **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)&lt;[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)>** card code set
+
+### setStringifyCardCodes
+
+Converts a set of card codes to their string representations.
+
+**Parameters**
+
+-   `set` **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)&lt;[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)>** card code set
+
+Returns **[Set](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)&lt;[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)>** set with string representations of the card codes,
+                       i.e. `Set({'Ah', 'Ks', 'Td', '3c, 'Ad'})`
+
 ### ranks
 
 Enumeration of possible hand ranks, each rank is a number from 0-8.
@@ -192,6 +213,8 @@ The ranks of the cards sorted highest to lowest.
 -   Q = 10
 -   K = 11
 -   A = 12
+
+6 bits each.
 
 Returns **[Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)** the ranks indexed as described above
 
