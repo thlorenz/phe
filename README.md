@@ -31,25 +31,28 @@ console.log('%s is a %s', board, name)
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
 **Table of Contents**  *generated with [DocToc](https://github.com/thlorenz/doctoc)*
 
--   [API](#api)
-    -   [evaluateCardCodes](#evaluatecardcodes)
-    -   [evaluateCards](#evaluatecards)
-    -   [evaluateCardsFast](#evaluatecardsfast)
-    -   [evaluateBoard](#evaluateboard)
-    -   [rankCards](#rankcards)
-    -   [rankCardsFast](#rankcardsfast)
-    -   [rankCardCodes](#rankcardcodes)
-    -   [rankBoard](#rankboard)
-    -   [ranks](#ranks)
-    -   [rankDescription](#rankdescription)
-    -   [handRank](#handrank)
-    -   [rankCodes](#rankcodes)
-    -   [suitCodes](#suitcodes)
-    -   [stringifyCardCode](#stringifycardcode)
-    -   [cardCode](#cardcode)
-    -   [cardCodes](#cardcodes)
-    -   [boardCodes](#boardcodes)
--   [License](#license)
+- [API](#api)
+  - [evaluateCardCodes](#evaluatecardcodes)
+  - [evaluateCards](#evaluatecards)
+  - [evaluateCardsFast](#evaluatecardsfast)
+  - [evaluateBoard](#evaluateboard)
+  - [rankCards](#rankcards)
+  - [rankCardsFast](#rankcardsfast)
+  - [rankCardCodes](#rankcardcodes)
+  - [rankBoard](#rankboard)
+  - [setCardCodes](#setcardcodes)
+  - [setStringifyCardCodes](#setstringifycardcodes)
+  - [ranks](#ranks)
+  - [rankDescription](#rankdescription)
+  - [handRank](#handrank)
+  - [rankCodes](#rankcodes)
+  - [suitCodes](#suitcodes)
+  - [stringifyCardCode](#stringifycardcode)
+  - [stringifyRank](#stringifyrank)
+  - [cardCode](#cardcode)
+  - [cardCodes](#cardcodes)
+  - [boardCodes](#boardcodes)
+- [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -238,6 +241,16 @@ Converts the given card code into a string presentation.
 -   `code` **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** the card code, i.e. obtained via `cardCode(rank, suit)`.
 
 Returns **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** a string representation of the card in question, i.e. `Ah`
+
+### stringifyRank
+
+Converts the given rank index into a rank.
+
+**Parameters**
+
+-   `rank` **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** the rank to stringify, i.e. `0b000100`
+
+Returns **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** the string of the rank, i.e. `'2'`
 
 ### cardCode
 

@@ -21,6 +21,7 @@ const {
   , rankCodes
   , suitCodes
   , stringifyCardCode
+  , stringifyRank
 } = require('./lib/hand-code')
 
 const evaluate5cards = require('./lib/evaluator5')
@@ -215,4 +216,5 @@ module.exports = {
   , rankCodes
   , suitCodes
   , stringifyCardCode
+  , stringifyRank
 }
