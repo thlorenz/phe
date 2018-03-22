@@ -49,6 +49,7 @@ console.log('%s is a %s', board, name)
   - [suitCodes](#suitcodes)
   - [stringifyCardCode](#stringifycardcode)
   - [stringifyRank](#stringifyrank)
+  - [stringifySuit](#stringifysuit)
   - [cardCode](#cardcode)
   - [cardCodes](#cardcodes)
   - [boardCodes](#boardcodes)
@@ -251,6 +252,16 @@ Converts the given rank index into a rank.
 -   `rank` **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** the rank to stringify, i.e. `0b000100`
 
 Returns **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** the string of the rank, i.e. `'2'`
+
+### stringifySuit
+
+Converts the given suit index to a suit.
+
+**Parameters**
+
+-   `suit` **[Number](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)** the suit to stringify, i.e. `0b1`
+
+Returns **[String](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)** the string of the sut, i.e. `'c'` (clubs)
 
 ### cardCode
 
